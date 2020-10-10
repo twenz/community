@@ -82,15 +82,15 @@ create the VM instance.
     
 1.  Install the support packages:
 
-        $ sudo apt update
-        $ sudo apt install lib32gcc1 lib32stdc++6 -y
+        sudo apt update
+        sudo apt install lib32gcc1 lib32stdc++6 -y
 
 1.  Install SteamCMD:
 
-        $ mkdir steam && cd steam
-        $ wget "http://media.steampowered.com/installer/steamcmd_linux.tar.gz"
-        $ tar -xvzf steamcmd_linux.tar.gz
-        $ ./steamcmd.sh
+        mkdir steam && cd steam
+        wget "http://media.steampowered.com/installer/steamcmd_linux.tar.gz"
+        tar -xvzf steamcmd_linux.tar.gz
+        ./steamcmd.sh
 
 1.  Log in to update Steam to the latest version:
 
@@ -117,8 +117,8 @@ In the following commands, replace [user_name] with your username. You can run `
 
 To update the server, you repeat many of the installation steps, except for creating the directory:
 
-    $ cd steam
-    $ ./steamcmd.sh
+    cd steam
+    ./steamcmd.sh
     Steam> login [steam_username] [steam_password]
     Steam> force_install_dir /home/[user_name]/armaserver
     Steam> app_update 233780 validate
@@ -126,8 +126,8 @@ To update the server, you repeat many of the installation steps, except for crea
 
 ### Start the server
 
-    $ cd armaserver
-    $ ./armaserver -name=server -config=server.cfg
+    cd armaserver
+    ./armaserver -name=server -config=server.cfg
 
 For information about the contents of the configuration file, see the
 [Arma 3 dedicated server page](https://community.bistudio.com/wiki/Arma_3_Dedicated_Server#Configuration) on the 
